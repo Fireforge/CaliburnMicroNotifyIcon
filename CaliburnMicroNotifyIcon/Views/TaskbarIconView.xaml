@@ -10,9 +10,9 @@
             ToolTipText="TaskbarIcon TaskbarIcon">
    <tb:TaskbarIcon.ContextMenu>
       <ContextMenu>
-         <MenuItem Header="Show Window"/>
+         <MenuItem Header="Show Window" cal:Message.Attach="[Click] = [Show]"/>
          <Separator/>
-         <MenuItem Header="Exit"/>
+         <MenuItem Header="Exit" cal:Message.Attach="[Click] = [Exit]"/>
       </ContextMenu>
    </tb:TaskbarIcon.ContextMenu>
 </tb:TaskbarIcon>
